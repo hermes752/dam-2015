@@ -49,10 +49,14 @@ ul{margin:0;
 
 .cabecera{border:1px solid gray;
 	padding:30px;
+	position: relative;
 	
 	background:gray url('../img/orus.jpg')no-repeat; 
 }
 .cabecera h1{text-align: center; font-family: Arial;}
 
-cabecera img{width:20px;height: 20px;}
+.cabecera img{width:100%;height: 100%;position: absolute;}
+.wrapper{background: blue;
+	margin-top: 10px;
+}
 
