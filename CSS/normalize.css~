@@ -30,7 +30,30 @@ body {
  * Correct `block` display not defined for `main` in IE 11.
  */
 
-
+.clearfix:before, 
+  .clearfix:after 
+  {
+  
+   content: 
+  "";
+  
+  
+display:  
+  table;
+  
+  
+}
+  
+  
+.clearfix:after 
+  {
+  
+  
+clear:  
+  both;
+  
+  
+}
 
 article,
 aside,
@@ -426,28 +449,4 @@ table {
 td,
 th {
   padding: 0;
-}
-.clearfix:before, 
-  .clearfix:after 
-  {
-  
-   content: 
-  "";
-  
-  
-display:  
-  table;
-  
-  
-}
-  
-  
-.clearfix:after 
-  {
-  
-  
-clear:  
-  both;
-  
-  
 }

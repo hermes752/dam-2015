@@ -1,3 +1,28 @@
+
+.clearfix:before,	
+  .clearfix:after	
+  {
+	
+   content:	
+  "";
+	
+  
+display:	
+  table;
+	
+  
+}
+	
+  
+.clearfix:after	
+  {
+	
+  
+clear:	
+  both;
+	
+  
+}
 body{font:400 9pt/1.6m Arial, Helvetica, sans-serif;}
 h1{
 	font-size:1em;
@@ -48,7 +73,7 @@ ol{list-style: none;}
 
 }
 
-.comment h2{border-bottom:1px dashed; padding-top:20px;}
+.comment h3{border-bottom:1px dashed; padding-top:20px;font-size: 1.1em;}
 table, tr, td{border:1px solid black;}
 .comment p{font-weight: normal;}
 
@@ -62,4 +87,8 @@ label {
   background: gray;
 }
 textarea{margin: .5em 0 0 0; padding: 40px;}
+.footer{text-align: center; padding-top: 20px;}
+.textleft{text-align: right;}
+.comment .avatar{width: 85px;}
+.img-responsive{max-width: 100%;}
 
