@@ -1,0 +1,45 @@
+  body{padding: 1em;}
+.fleft{
+	float:left;
+}
+.wrapper{
+	background-color:#AAA: 
+}
+.fright{float:right;}
+.container{
+	border:1px solid gray;
+	padding:0.5em;
+	background-color:#CCC;
+	margin-bottom: 20px;
+}
+.clearfix:before,	
+  .clearfix:after	
+  {
+	
+   content:	
+  "";
+	
+  
+display:	
+  table;
+	
+  
+}
+	
+  
+.clearfix:after	
+  {
+	
+  
+clear:	
+  both;
+	
+  
+}
+
+.origin{position:absolute;}
+  .box{position: relative; left:0; top:100px;}
+  
+
+
+
