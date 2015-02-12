@@ -80,15 +80,17 @@ table, tr, td{border:1px solid black;}
 label {
   display: block;
   margin: .5em 0 0 0;
+  font-weight: normal;
+
 }
 .btn {
   display: block;
   margin: 1em 0;
   background: gray;
 }
-textarea{margin: .5em 0 0 0; padding: 40px;}
+textarea{margin: .5em 0 0 0;height: 100px; }
 .footer{text-align: center; padding-top: 20px;}
 .textleft{text-align: right;}
 .comment .avatar{width: 85px;}
 .img-responsive{max-width: 100%;}
-
+.form-row{width: 30%;}
