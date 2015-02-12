@@ -47,3 +47,7 @@ ol{list-style: none;}
 	padding-left:40px;
 
 }
+
+.comment h2{border-bottom:1px dashed; padding-top:20px;}
+table, tr, td{border:1px solid black;}
+.comment p{font-weight: normal;}
