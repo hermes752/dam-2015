@@ -74,8 +74,11 @@ ol{list-style: none;}
 }
 
 .comment h3{border-bottom:1px dashed; padding-top:20px;font-size: 1.1em;}
-table, tr, td{border:1px solid black;}
+table {width:100%; border-collapse: collapse;}
 .comment p{font-weight: normal;}
+.data-tabla{border:3px solid #ccc;}
+.data-table th, .data-table tr{padding: 3px 5px;}
+.thfondo{background: gray;}
 
 label {
   display: block;
