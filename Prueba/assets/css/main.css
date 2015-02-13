@@ -51,7 +51,6 @@ ul{margin:0;
 	padding:30px;
 	
 	
-	background:gray url('../img/orus.jpg')no-repeat; 
 }
 .cabecera h1{text-align: center; font-family: Arial;}
 
@@ -59,7 +58,10 @@ ul{margin:0;
 .wrapper{background: blue;
 	margin-top: 10px;
 }
-img {
+.cabecera .avatar{width: 85px;}
+
+.imagen {
+	
 height: auto;
 max-width: 100%;
 }
