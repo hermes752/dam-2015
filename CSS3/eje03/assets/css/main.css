@@ -1,0 +1,40 @@
+ #container { width: 500px; height:500px; position: relative;}
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            font-size: 20px;
+         
+            padding: 5px;
+          transition-property: background-color, height, width, top, left, color, transform; 
+          transition-duration:1s;
+        }
+        .box:hover {
+          
+            background-color: blue;
+            color: yellow;
+            font-size: 18px;
+            /*position:absolute;*/
+         
+           left:50px;
+           
+           
+        }
+        .ex01 .box {
+        transform:translate(10px, 10px);
+        }
+        .ex02 .box {
+            transform:translate(10px, 20px);
+        }
+        .ex03 .box {
+         transform:translate(10px, 30px);
+        }
+        .ex04 .box {
+            transform:translate(10px, 40px);
+        }
+        .ex01 .box:hover{transform:translate(450px, 100px) scale(0.5) rotate(270deg);}
+        .ex02 .box:hover{transform:translate(350px, 200px) scale(0.5) rotate(270deg);}
+        .ex03 .box:hover{transform:translate(600px, 300px) scale(0.5) rotate(270deg);}
+        .ex04 .box:hover{transform:translate(250px, 100px) scale(0.5) rotate(270deg);}
+
+        /*Con Scale (0.5)  reducimos el tamaño, hemos utilizado scale para reducir el tamaño sin tener que usar width y height */
