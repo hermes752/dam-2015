@@ -8,18 +8,40 @@ window.onload = function() {
     var botoi6 = document.getElementById("forward");
     var botoi7 = document.getElementById("start");
     var botoi8 = document.getElementById("end");
-    var volume = document.getElementById("volume");
+    var playlist= document.querySelectorAll('#tracklist');
+   
     var pro = document.getElementById("progress");
+    var change = document.getElementById("changen");
     pro.value = 0;
     var repro = function() {
         bideo = document.getElementById("bideo");
         bideo.play();
-
+        pro.value=bideo.currentTime/bideo.duration * 100;
 
 
 
 
     };
+
+    var changevideo=function(e){
+    	 bideo = document.getElementById("bideo");
+    	var src=e.traget.dataset.src;
+    	if(modernizer.video.h264){
+    		bideo.src=src+'.mp4';
+    	}else{
+    		bideo.src=src+'webm';
+    	}
+    };
+    var updatefn=function(){
+    	pro.value=currentTime/player.duration * 100;
+    };
+
+    var volumefn=function(){
+    	    bideo = document.getElementById("bideo");
+    	    bideo.volume=this.value/100;
+
+    };
+
     var pause = function() {
         bideo = document.getElementById("bideo");
         bideo.pause();
@@ -29,21 +51,21 @@ window.onload = function() {
     };
     var start = function() {
         bideo = document.getElementById("bideo");
-        bideo.curretncurrentTime = 0;
+        bideo.currentTime = 0;
 
 
 
     };
     var end = function() {
         bideo = document.getElementById("bideo");
-        bideo.curretncurrentTime = player.duration;
+        bideo.currentTime = bideo.duration;
 
 
 
     };
     var backward = function() {
         bideo = document.getElementById("bideo");
-        bideo.curretncurrentTime -= 10;
+        bideo.currentTime -= 10;
 
 
 
@@ -97,6 +119,9 @@ window.onload = function() {
     }
     if (botoi8) {
         botoi8.addEventListener("click", end, false);
+    }
+      if (changen) {
+        changen.addEventListener("input", volumefn, false);
     }
 
 
