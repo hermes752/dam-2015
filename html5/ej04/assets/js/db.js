@@ -46,7 +46,7 @@ APP.DB = (function() {
 
                 };
 
-var getAll=function(){
+var getAll=function(success){
     db.transaction(function(tx){
         var sql="SELECT * FROM tweets ORDER BY created_at DESC";
         tx.executeSql(sql,[],function(tx, results){
@@ -54,7 +54,7 @@ var getAll=function(){
             for(var i=results.rows.leng-1; i>=0;i--){
                 arr.push(results.rows.item(i));
             } 
-            return arr;
+     sucess(datos);
         });
     });
 };

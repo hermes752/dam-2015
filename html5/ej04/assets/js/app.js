@@ -7,6 +7,10 @@
             created_at:"mooonnna"};
 
             //APP.DB.insert(tweet);
-            APP.DB.getAll();
+
+            var success=function (datos){
+                console.log(datos);
+            };
+             APP.DB.getAll(success);
 
 }());
