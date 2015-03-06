@@ -25,7 +25,7 @@ window.onload = function() {
 
     var changevideo=function(e){
     	 bideo = document.getElementById("bideo");
-    	var src=e.traget.dataset.src;
+    	var src=e.target.dataset.src;
     	if(modernizer.video.h264){
     		bideo.src=src+'.mp4';
     	}else{
