@@ -38,7 +38,12 @@ results.innerHTML=primes.join(" ");
 
 });
 
+worker.addEventListener('message', function(e){
+	var primes=e.data;
+	results.innerHTML=primes.join(" ");
 
+
+});
 
 
 
