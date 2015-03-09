@@ -28,10 +28,11 @@ var botoi1 = document.getElementById("calcular");
 var input=document.getElementById("number");
 var results=document.getElementById("results");
 
-var worker=new Worker('assets/js/primes.es');
+var worker=new Worker('assets/js/primes.js');
 botoi1.addEventListener('click', function(e){
 
 e.preventDefault();
+var num=input.value;
 worker.postMessage(num);
 
 results.innerHTML=primes.join(" ");

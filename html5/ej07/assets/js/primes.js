@@ -1,5 +1,4 @@
 function getPrimes() {
-	var max= document.getElementById("number").value;
     var sieve = [],
         i, j, primes = [];
     for (i = 2; i <= max; ++i) {
